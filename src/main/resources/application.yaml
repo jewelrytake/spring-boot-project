@@ -6,11 +6,11 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost/work_db
     username: postgres
-    password: jewelry
+    password:
   mail:
     host: smtp.gmail.com
-    username: persontvone@gmail.com
-    password: potmathebest
+    username:
+    password:
     port: 587
     protocol: smtp
   jpa:
@@ -27,7 +27,7 @@ spring:
     expose-request-attributes: true
 
 upload:
-  path: /home/noname/dev_files
+  path: /home/nonamepc/dev_files
 mail:
   debug: true
 hostname:
