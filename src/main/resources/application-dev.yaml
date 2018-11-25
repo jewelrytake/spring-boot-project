@@ -1,0 +1,38 @@
+spring:
+  session:
+    jdbc:
+      initialize-schema: always
+      table-name: SPRING_SESSION
+  datasource:
+    url: jdbc:postgresql://localhost/work_db
+    username: postgres
+    password: jewelry
+  mail:
+    host: smtp.gmail.com
+    username: persontvone@gmail.com
+    password: potmathebest
+    port: 587
+    protocol: smtp
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  freemarker:
+    expose-request-attributes: true
+
+server:
+  port: 8090
+upload:
+  path: /home/noname/dev_files
+mail:
+  debug: true
+hostname: localhost:8090
+
+recaptcha:
+  secret: 6LcGmWoUAAAAAAH4m1NdWsseCOXhN9UOSOzUqgCQ
